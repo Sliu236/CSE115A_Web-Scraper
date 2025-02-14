@@ -1,3 +1,6 @@
+# CSE115A Food Recalls Notifier - Web Crawler
+# Author: Size Liu
+
 from dotenv import load_dotenv
 import os
 import requests
