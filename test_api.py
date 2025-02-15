@@ -1,4 +1,4 @@
-# Test the FDA API key
+# Test FDA API key
 import os
 import requests
 

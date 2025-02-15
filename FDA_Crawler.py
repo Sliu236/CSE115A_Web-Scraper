@@ -6,7 +6,7 @@ import os
 import requests
 import json
 
-# 加载环境变量
+# load environment variables from .env file (see readme.md for more details)
 load_dotenv()
 api_key = os.getenv("FDA_API_KEY")
 
@@ -19,7 +19,7 @@ def WebCrawler(api_key, limit=100): # Fetch all food recalls from FDA API (Sorte
             'api_key': api_key,
             'limit': limit,
             'skip': skip,
-            'sort': 'report_date:asc'
+            'sort': 'report_date:desc' # Sort by report_date in ascending order (change desc to asc to sort in ascending order)
         }
 
         try:
