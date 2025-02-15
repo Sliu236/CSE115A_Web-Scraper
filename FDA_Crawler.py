@@ -48,7 +48,7 @@ def save_recalls_to_json(api_key, output_file):    # Save info to json file
         for recall in recalls:
             if not first_entry:
                 f.write(',\n')
-            json.dump(recall, f, ensure_ascii=False)
+            json.dump(recall, f, ensure_ascii=False, indent=4)
             first_entry = False
         f.write(']')
 
